@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Joke generator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <script>
+        let jokes = [
+            "Why did the t-rex eat raw meat? because its itty-bitty arms couldn't work the oven!",
+            "Why do bees have sticky hair? Because they use honeycombs!",
+            "What happens when an egg hears a joke? It cracks up!",
+            "What do you get if you sit under the cow? A pat in the head",
+            "What is the most musical part of a fish? The scales!",
+            "Where do the avengers grab their super-skinny lattes? Starkbucks!",
+            "How many wizards does it take to change a light bulb? Two - one to hold the bulb, and one to make the room revolve!Two - one to hold the bulb, and one to make the room revolve!",
+            "Why is the Easter bunny so smart? He's an egghead!",
+            "What do sloths like to read? Snooze-papers!",
+            "What happened when the air conditioning in the cheese factory broke?What happened when the air conditioning in the cheese factory broke? There was a meltdown!",
+            "What stays in the corner but goes around the world? A stamp!",
+            "What is it about birthdays that make kangaroos unhappy? They only get to celebrate them in leap years!",
+            "Why doesn’t Batman like going on nature walks? He doesn't like Poison Ivy!",
+            "Why was Woody fed up of Hamm? He was being a bore!",
+            "How do the Mario Bros surf the internet? With a web Bowser!",
+            "Why did the traffic light say to the car? Hey! Don’t look, I’m about to change!",
+            "How can you tell Squidward and his sister are twins? They're itenticle!",
+            "Thor, Iron Man and Hulk walk into IKEA... Avengers...Assemble!",
+            "What's Postman Pat's favourite herb? Parcel-y!",
+            "Did you hear about the chicken who could only lay eggs in winter? She was no spring chicken!",
+            "What's Steve's favourite sport? Boxing!",
+            "Why does Jasmine want a lion? Because her tiger has the mane part missing!",
+            "What is smelly and strong? A cheese lifting weights!",
+            "Why did the elephants get kicked out of the swimming pool? Because they couldn’t keep their trunks up!",
+            "What do you call a magic Labrador? A Labracadabdoor!",
+            "Why does Mr. Krabs never give to charity? He's a shellfish penny pincher!",
+            "Why did the moon not eat his dinner? It was a full moon!",
+            "What has webbed feet and fangs? Count Duckula!",
+            "What do you call a bee who is having a bad hair day? A frizz-bee!",
+            "What do you call Mufasa's farts? Noble gas!",
+            "what does Velma Dinkley use to write? Mystery inc.!"
+        ]
+        let min = 1
+        let max = 30
+        let num
+        let joke
+
+        setInterval(() => {
+            num = Math.round(Math.floor(Math.random() * (max - min + 1)) + min);
+            joke = jokes[num];
+        }, 500);
+    </script>
+    <h3> Click the button to get a joke</h3>
+    <input type="submit" value="Get a joke" onclick="alert(`${joke}`)">
+</body>
+
+</html>
