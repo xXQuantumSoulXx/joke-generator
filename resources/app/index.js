@@ -2,8 +2,6 @@ const {app, BrowserWindow} = require('electron')
 
 let win;
 
-console.log(num.num)
-
 function createWindow() {
     win = new BrowserWindow({
         height: 800,
