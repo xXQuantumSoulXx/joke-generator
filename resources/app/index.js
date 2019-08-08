@@ -1,6 +1,4 @@
-const jokes = require('./jokes.json')
 const {app, BrowserWindow} = require('electron')
-const num = require('./num.js')
 
 let win;
 
