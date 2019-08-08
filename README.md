@@ -4,11 +4,21 @@
  These may not be accurate and may work on older/newer things and some may not be needed, but here it goes:
  - Windows 10 1903
  - Node.js 10.16.1
+ - NPM 6.10.3
 ## Installation
- Installation is pretty simple. First, download the zip from here and then extract all the files to the directory of your choice.
+ First, to install the packages, use the commmand below
+ ```
+ npm install
+ ```
 
- However, be aware that if you want to compile from source, you will have to go to the 'development' branch and check the readme for that.
+ Also, if it doesn't work, install electron globally
+ ```
+ npm i -g electron
+ ```
 ## Run
- To run it, simply run joke.exe
+ To run it, run the command below:
+ ```
+ electron .
+ ```
 ## Contributing
  If you would like to contribute to this, please feel free to open a pull request!
